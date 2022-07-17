@@ -1,2 +1,2 @@
 # portfolio-python
-A few example of using Python 
+A few examples of using Python 
