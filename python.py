@@ -30,6 +30,38 @@ addition_str = "2+5+10+20"
 sum_val = sum([int(x) for x in addition_str.split('+')])
 
 """
+Define a function which generates a list that contains complete email addresses
+(e.g.diana.prince @ gmail.com).The function receives a dictionary, which contains
+domain names as keys, and a list of users as values.
+"""
+
+
+def email_list(domains):
+    """generates a list that contains complete email addresses"""
+    emails = []
+    for domain, users in domains.items():
+        for user in users:
+            full_email = '{}@{}'.format(user, domain)
+            emails.append(full_email)
+    return emails
+
+
+"""
+Create a dictionary that keeps track of all the characters in the string and notes how many times
+each character was seen.Then, find the key with the lowest value in this dictionary.
+"""
+
+str1 = "git add -p: allows a user to interactively review patches to add to the current commit"
+d = {}
+for char in str1:
+    d[char] = d.get(char, 0) + 1
+keys = list(d.keys())
+min_value = keys[0]
+for key in keys:
+    if d[key] < d[min_value]:
+        min_value = key
+
+"""
 If a filesystem has a block size of 4096 bytes, this means that a file consisting of only one byte
 will still use 4096 bytes of storage.A file made up of 4097 bytes will use 4096 * 2 = 8192 bytes
 of storage. Knowing this, define a function that calculates the total number of bytes needed to
@@ -73,36 +105,3 @@ def octal_to_string(octal):
             else:
                 result += '-'
     return result
-
-
-"""
-Define a function which generates a list that contains complete email addresses
-(e.g.diana.prince @ gmail.com).The function receives a dictionary, which contains
-domain names as keys, and a list of users as values.
-"""
-
-
-def email_list(domains):
-    """generates a list that contains complete email addresses"""
-    emails = []
-    for domain, users in domains.items():
-        for user in users:
-            full_email = '{}@{}'.format(user, domain)
-            emails.append(full_email)
-    return emails
-
-
-"""
-Create a dictionary that keeps track of all the characters in the string and notes how many times
-each character was seen.Then, find the key with the lowest value in this dictionary.
-"""
-
-str1 = "git add -p: allows a user to interactively review patches to add to the current commit"
-d = {}
-for char in str1:
-    d[char] = d.get(char, 0) + 1
-keys = list(d.keys())
-min_value = keys[0]
-for key in keys:
-    if d[key] < d[min_value]:
-        min_value = key
