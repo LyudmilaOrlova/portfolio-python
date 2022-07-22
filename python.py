@@ -73,13 +73,10 @@ def calculate_storage(filesize):
     """calculates the total amount of bytes needed to store a file of a given size"""
     block_size = 4096
     full_blocks = filesize // block_size
-    partial_block_remainder = block_size - filesize % block_size
-    if filesize == block_size:
-        return block_size
-    elif partial_block_remainder > 0:
+    partial_block_remainder = filesize % block_size
+    if partial_block_remainder > 0:
         return (full_blocks + 1) * block_size
-    else:
-        return block_size
+    return block_size * full_blocks
 
 
 """
