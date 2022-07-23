@@ -5,6 +5,7 @@ A few examples of using Python, including:
 - Python Dictionaries 
 - Python Functions
 - Python For Loops
+- Python While Loops
 - Python If...Else
 - Python File Handling
 - Python String Methods
@@ -12,7 +13,6 @@ A few examples of using Python, including:
 Still to add:
 - Python Tuples
 - Python Sets
-- Python While Loops
 - Python Lambda
 - Python JSON
 - Python Try...Except
