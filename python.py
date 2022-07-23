@@ -144,3 +144,15 @@ def sum_divisors(n):
         else:
             d += 1
     return total_sum
+
+
+"""
+Define a function which returns whether the number is a power of the given base. 
+Base is assumed to be a positive number.
+"""
+
+
+def is_power_of(num, base):
+    if num < base:
+        return num == 1
+    return is_power_of(num//base, base)
