@@ -3,6 +3,7 @@ A few examples of using Python, including:
 - Python List Methods
 - Python List Comprehension
 - Python Dictionaries 
+- Python Tuples
 - Python String Methods
 - Python Functions
 - Python For Loops
@@ -12,7 +13,6 @@ A few examples of using Python, including:
 - Recursion
 
 Still to add:
-- Python Tuples
 - Python Sets
 - Python Lambda
 - Python JSON
