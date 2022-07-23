@@ -125,3 +125,22 @@ def print_prime_factors(num):
             factor += 1
     return 'Done'
 
+
+"""
+Define a function so that it returns the sum of all the divisors of a number,
+without including it. A divisor is a number that divides into another without a
+remainder.
+"""
+
+
+def sum_divisors(n):
+    """returns the sum of all the divisors of a number, without including it"""
+    total_sum = 0
+    d = 1
+    while d < n:
+        if n % d == 0:
+            total_sum += d
+            d += 1
+        else:
+            d += 1
+    return total_sum
