@@ -102,3 +102,21 @@ def octal_to_string(octal):
             else:
                 result += '-'
     return result
+
+'''
+Define a function which prints all the prime factors of
+a number. A prime factor is a number that is prime and divides another without a
+remainder.
+'''
+
+def print_prime_factors(num):
+    """prints all the prime factors of a number"""
+    factor = 2
+    while factor <= num:
+        if num % factor == 0:
+            print(factor)
+            num = num/factor
+        else:
+            factor += 1
+    return 'Done'
+
