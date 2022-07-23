@@ -9,6 +9,7 @@ A few examples of using Python, including:
 - Python If...Else
 - Python File Handling
 - Python String Methods
+- Recursion
 
 Still to add:
 - Python Tuples
