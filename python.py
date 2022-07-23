@@ -7,6 +7,7 @@ and the highest long-term interest rate. Both should be computed only for the pe
 through May 2017
 """
 
+
 with open("SP500.txt", "r") as file:
     print(file.read())
     closing_price = []
@@ -20,18 +21,19 @@ with open("SP500.txt", "r") as file:
     mean_SP = sum(closing_price) / len(closing_price)
     max_interest = max(interest_rate)
 
-""" 
-addition_str is a string with a list of numbers separated by the + sign. 
-Write code that uses the accumulation pattern to take the sum of all of the numbers 
-and assigns it to sum_val. 
+    
 """
+addition_str is a string with a list of numbers separated by the + sign. Write code that uses the accumulation pattern to take the sum of all of the numbers 
+and assigns it to sum_val.
+"""
+
 
 addition_str = "2+5+10+20"
 sum_val = sum([int(x) for x in addition_str.split('+')])
 
+
 """
-Define a function which generates a list that contains complete email addresses
-(e.g.diana.prince @ gmail.com).The function receives a dictionary, which contains
+Define a function which generates a list that contains complete email addresses (e.g.diana.prince @ gmail.com).The function receives a dictionary, which contains
 domain names as keys, and a list of users as values.
 """
 
@@ -51,6 +53,7 @@ Create a dictionary that keeps track of all the characters in the string and not
 each character was seen.Then, find the key with the lowest value in this dictionary.
 """
 
+
 str1 = "git add -p: allows a user to interactively review patches to add to the current commit"
 d = {}
 for char in str1:
@@ -61,6 +64,7 @@ for key in keys:
     if d[key] < d[min_value]:
         min_value = key
 
+        
 """
 If a filesystem has a block size of 4096 bytes, this means that a file consisting of only one byte
 will still use 4096 bytes of storage.A file made up of 4097 bytes will use 4096 * 2 = 8192 bytes
@@ -104,11 +108,11 @@ def octal_to_string(octal):
     return result
 
 
-'''
-Define a function which prints all the prime factors of
-a number. A prime factor is a number that is prime and divides another without a
-remainder.
-'''
+"""
+Define a function which prints all the prime factors of a number. 
+A prime factor is a number that is prime and divides another without a remainder/
+"""
+
 
 def print_prime_factors(num):
     """prints all the prime factors of a number"""
