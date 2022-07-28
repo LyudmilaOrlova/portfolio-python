@@ -9,15 +9,14 @@ A few examples of using Python, including:
 - Python For Loops, While Loops, Nested Iteration
 - Python If...Else
 - Python File Handling
-- CSV files
+- Processing JSON results
 - Recursion
 
 Still to add:
 - Python Sets
 - Python Lambda
-- Python JSON
 - Python Try...Except
-- OOP
+- Classes and Inheritance
 
 
 
