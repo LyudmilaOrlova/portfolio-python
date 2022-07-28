@@ -156,3 +156,20 @@ def is_power_of(num, base):
     if num < base:
         return num == 1
     return is_power_of(num//base, base)
+
+# Processing JSON results
+
+import json
+a_string = '\n\n\n{\n "resultCount":25,\n "results": [\n{"wrapperType":"track", "kind":"podcast", "collectionId":10892}]}'
+d = json.loads(a_string)
+
+print(d)
+print(a_string)
+
+def convert_into_json(obj):
+    return json.dumps(obj, sort_keys=True, indent=2)
+
+d = {'key1': {'c': True, 'a': 90, '5': 50}, 'key2': {'b': 3, 'c': "yes"}}
+
+print(d)
+print(convert_into_json(d))
