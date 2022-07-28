@@ -6,10 +6,10 @@ A few examples of using Python, including:
 - Python Tuples
 - Python String Methods
 - Python Functions
-- Python For Loops
-- Python While Loops
+- Python For Loops, While Loops, Nested Iteration
 - Python If...Else
 - Python File Handling
+- CSV files
 - Recursion
 
 Still to add:
