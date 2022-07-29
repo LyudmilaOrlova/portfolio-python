@@ -173,3 +173,29 @@ d = {'key1': {'c': True, 'a': 90, '5': 50}, 'key2': {'b': 3, 'c': "yes"}}
 
 print(d)
 print(convert_into_json(d))
+
+# Classes and Inheritance
+
+current_year = 2022
+
+class Person:
+    def __init__(self, name, year_born):
+        self.name = name
+        self.year_born = year_born
+    def get_age(self):
+        return current_year - self.year_born
+    def __str__(self):
+        return "{} ({} years old)".format(self.name, self.get_age())
+
+class Student(Person):
+    def __init__(self, name, year_born):
+        Person.__init__(self, name, year_born)
+        self.knowledge = 0
+    def study(self):
+        self.knowledge += 1
+
+tom = Student("Tom", 2000)
+tom.study()
+print(tom)
+print(tom.knowledge)
+
