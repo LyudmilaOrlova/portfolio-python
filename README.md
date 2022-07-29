@@ -11,12 +11,12 @@ A few examples of using Python, including:
 - Python File Handling
 - Processing JSON results
 - Recursion
+- Classes and Inheritance
 
 Still to add:
-- Python Sets
 - Python Lambda
 - Python Try...Except
-- Classes and Inheritance
+
 
 
 
